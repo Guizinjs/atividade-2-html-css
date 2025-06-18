@@ -11,35 +11,48 @@
             border: 0;
         }
         body {
-            background-color: black;;
+            background-color: rgb(69, 80, 88);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         h1 {
-            color: rgba(0, 0, 0, 0.466);
+            color: rgb(0, 0, 0);
             font-size: 50px;
         }
         header {
-            background-color:rgb(52, 84, 112);
+            background-color:rgb(34, 36, 37);
             text-align: start;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            gap: 200px;
         }
         main {
-            background-color: rgb(21, 4, 255);
-            border: 5px dashed white;
-            margin:  30px;
+            background-color: rgb(69, 80, 88);
+            margin: 30px;
             padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  /* Centraliza verticalmente */
+            align-items: center;      /* Centraliza horizontalmente */
+            flex: 1;
+            font-size: x-large;
         }
+        /*  border: 5px dashed white;
+            margin:  30px;
+            padding: 30px;*/
         h2 {
             text-align: center;
             color: aliceblue;
         }
         footer {
-            background-color: rgb(116, 115, 223);
-            flex-direction: row-reverse;
-            justify-content: center;
+            background-color: rgb(66, 66, 71);
+            flex-direction: column-reverse;
+            justify-content: end;
             align-items: flex-end;
+            text-align: end;
         }
         .lista  {
             justify-content: center;
@@ -61,19 +74,17 @@
         #botaosobrenos {
             align-self: start;
         }
-            ul {
+        ul {
             display: flex;
-            flex: end;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-start;
-            }
+            gap: 30px; /* <-- isso separa os botões */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }   
         li {
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        /*#=id .=class*/
+    }
+/*#=id .=class*/
     </style>
 </head>
 <body>
